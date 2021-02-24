@@ -53,6 +53,19 @@ def call_friend(friend)
     return "Hi #{friend.name}! It's #{self.name}. How are you?"
 end
 
+def start_conversation(person, topic)
+    if topic == "politics" 
+        self.happiness -= 2
+        person.happiness -= 2
+        return 'blah blah partisan blah lobbyist'
+    elsif topic == "weather" 
+        self.happiness = @happiness += 1
+        person.happiness += 1
+     return 'blah blah sun blah rain'
+    else 
+        return 'blah blah blah blah blah'
+        end
+    end
 
 end
 
