@@ -23,6 +23,37 @@ def hygiene=(points)
     @hygiene = 0 if @hygiene < 0
 end 
 
+def happy?
+    @happiness > 7
+end
+
+def clean?
+    @hygiene > 7
+end
+
+def get_paid(salary)
+    @bank_account += salary
+    return "all about the benjamins"
+end
+
+def take_bath()
+    self.hygiene= (@hygiene + 4) # one way to call
+    return '♪ Rub-a-dub just relaxing in the tub ♫'
+end
+
+def work_out() #() dont matter, you can take them off or leave it
+    self.happiness += 2 #another way to call
+    self.hygiene -= 3
+    return '♪ another one bites the dust ♫'
+end
+
+def call_friend(friend)
+    self.happiness += 3
+    friend.happiness += 3
+    return "Hi #{friend.name}! It's #{self.name}. How are you?"
+end
+
+
 end
 
 
