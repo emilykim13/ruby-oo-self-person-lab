@@ -67,7 +67,7 @@ def start_conversation(person, topic)
         end
     end
 
-end
+end 
 
 
 # binding.pry
